@@ -1,0 +1,9 @@
+##Create key
+## ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+##Add private key to agent
+##ssh-add ~/.ssh/pvt_key
+## Remove/clear the private key to agent
+#ssh-add -D ~/.ssh/pvt_key
+#Debug ssh
+####ssh -T git@github.com
+#ln -sf ${PWD}/ssh_config  ${HOME}/.ssh/config
