@@ -10,3 +10,6 @@ ssh_update :
 vim_update :
 	ln -s /home/hduser/vi.config/vim.config /home/hduser/.vimrc
 
+java_update :
+	ln -s /home/hduser/vi.config/vim.config /home/hduser/.vimrc
+
