@@ -1,12 +1,35 @@
-#!/bin/sh
+#!/bin/bash
+
+
+#NOTE : get the latest vim from 3rd party repository
+#sudo add-apt-repository ppa:fcwu-tw/ppa
+#sudo apt-get update
+#sudo apt-get install vim
+
+#Verify the installation
+#dpkg -l | gpre install
+
+#Check the updated repository
+readonly bundledir=${PWD}/bundle
+repoList=( 'git://github.com/scrooloose/nerdtree.git' 
+           'git://github.com/elzr/vim-json.git' 
+         )
 
 do_install() {
     #install the nerdtree
     git clone git://github.com/scrooloose/nerdtree.git ${PWD}/bundle/nerdtree
+
 }
 
-#do_uninstall() {
-#    cd ${PWD}/bundle && rm -rf nerdtree.git
-#}
-do_install
 
+force_install() {
+    for repo in ${repoList[@]}
+    do
+        echo "repo : ${repo}"
+        dest="$bundledir/$(basename ${repo} | sed -e 's/\.git$//')"
+        rm -rf $dest
+        echo "Cloning $url into $dest"
+        git clone -q $url $dest
+        rm -rf $dest/.git
+    done
+}
