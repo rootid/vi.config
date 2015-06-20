@@ -13,6 +13,7 @@
 readonly bundledir=${PWD}/bundle
 repoList=( 'git://github.com/scrooloose/nerdtree.git' 
            'git://github.com/elzr/vim-json.git' 
+           'git://github.com/kien/ctrlp.vim.git'
          )
 
 do_install() {
@@ -21,15 +22,15 @@ do_install() {
 
 }
 
-
 force_install() {
     for repo in ${repoList[@]}
     do
         echo "repo : ${repo}"
         dest="$bundledir/$(basename ${repo} | sed -e 's/\.git$//')"
         rm -rf $dest
-        echo "Cloning $url into $dest"
-        git clone -q $url $dest
+        echo "Cloning $repo into $dest"
+        git clone -q $repo $dest
         rm -rf $dest/.git
     done
 }
+force_install
