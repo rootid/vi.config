@@ -19,3 +19,10 @@ vim_update :
 java_update :
 	ln -s /usr/java/jdk1.7.0_65 /usr/java/latest
 
+vim_config :
+	mkdir -p ${PWD}/bundle 
+	ln -s /home/hduser/vi.config/bundle /home/hduser/.vim/bundle
+	mkdir -p ${PWD}/autoload 
+	ln -s /home/hduser/vi.config/autoload /home/hduser/.vim/autoload
+	curl https://github.com/tpope/vim-pathogen/raw/master/autoload/pathogen.vim > ${PWD}/pathogen.vim
+

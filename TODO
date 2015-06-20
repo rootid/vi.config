@@ -1,0 +1,21 @@
+
+* Install git
+* Install open-sshserver
+* Install vim use updated version
+* Update vim with +clipboard version
+* Install one of the below version to access +clipboard
+* vim-gnome, vim-athena, and vim-gtx.
+* Get vi.config and configure 
+* Update ssh_config
+* Add vim plugins
+* JAVA
+* Hadoop
+* Eclipse
+
+
+* vim help
+* :version : check available plugins
+
+* Install plugins
+*Pathogen 
+*NerdTree
