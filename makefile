@@ -26,3 +26,5 @@ vim_config :
 	ln -s /home/hduser/vi.config/autoload /home/hduser/.vim/autoload
 	curl https://github.com/tpope/vim-pathogen/raw/master/autoload/pathogen.vim > ${PWD}/pathogen.vim
 
+install_ctags :
+	sudo apt-get install exuberant-ctags

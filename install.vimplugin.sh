@@ -13,8 +13,6 @@
 readonly bundledir=${PWD}/bundle
 
 repoList=( 'git://github.com/scrooloose/nerdtree.git' 
-           'git://github.com/elzr/vim-json.git' 
-           'git://github.com/kien/ctrlp.vim.git'
            'git://github.com/kien/ctrlp.vim.git'
          )
 
