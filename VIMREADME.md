@@ -13,6 +13,13 @@
 To add head tag aroung the text object
 yss<head>
 
+*To Add the <html> tag
+* add word and then yss-
+
+* To add the div element ysst<div id="nav">
+* To add the div id = "nav" accross the line <ctrl+v+$>S <div id="nav">
+
+
 To add body around a paragraph, 
 Shift+V S<body>
 
