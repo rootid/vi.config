@@ -38,5 +38,41 @@ In vimconsole to get the ascii type
 <c-k>,
  Move selection up.
 
+### autocompletion
+
+Command	Type of Completion
+<C-n>	        Generic keywords
+<C-x><C-n>	Current buffer keywords
+<C-x><C-i>	Included file keywords
+<C-x><C-]>	tags file keywords
+<C-x><C-k>	Dictionary lookup
+<C-x><C-l>	Whole line completion
+<C-x><C-f>	Filename completion
+<C-x><C-o>	Omni-completion
+
+:h popupmenu-completion
+
+* To list all the keyword in the bufferlist use
+* :ls!
+
+#### disable/enable scanning of the words
+* :set complete-=i
+* :set complete+=k (use the dictionary)
+
+#### To extend the omnifunction functionality
+
+:h compl-omni-filetypes
+:h complte-functions
+
+
+#### TO use the ftplugin
+:h ftplugin-name
+
+
+
+
+
+
+
 
 
