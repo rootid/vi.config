@@ -18,11 +18,11 @@ OldrepoList=( 'git://github.com/scrooloose/nerdtree.git'
            'git://github.com/tpope/vim-surround.git'
            'git://github.com/kien/ctrlp.vim'
            'git://github.com/godlygeek/tabular.git'
-            
+           'git://github.com/jieyu/ftplugin.vim'
          )
 
 newRepoList=(  
-           'git://github.com/jieyu/ftplugin.vim'
+           'git://github.com/Shougo/neocomplete.vim'
            )
 
 install() {

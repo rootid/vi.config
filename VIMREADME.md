@@ -64,15 +64,16 @@ Command	Type of Completion
 :h compl-omni-filetypes
 :h complte-functions
 
+#### TODO
+* http://stackoverflow.com/questions/997373/making-vim-load-omnicomplete-from-current-working-directory
+
 
 #### TO use the ftplugin
 :h ftplugin-name
 
 
+#### LINKS
 
+http://media.pragprog.com/titles/dnvim/code/global/episodes.html
 
-
-
-
-
-
+#### neocomplete
