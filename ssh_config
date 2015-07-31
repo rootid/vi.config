@@ -3,7 +3,7 @@ Host github.com
   User rootid
   IdentityFile ${HOME}/.ssh/rootid
 
-Host github.com
-  HostName github.com
-  User invrev
-  IdentityFile ${HOME}/.ssh/invrev
+#Host github.com
+#  HostName github.com
+#  User invrev
+#  IdentityFile ${HOME}/.ssh/invrev
