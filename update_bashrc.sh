@@ -14,3 +14,5 @@ export JAVA_HOME=/usr/java/latest
 if ! echo ${PATH} | grep -q ${JAVA_HOME} ; then
    export PATH="${JAVA_HOME}/bin:${PATH}"
 fi
+
+PS1="\u@mat \W\$ "
