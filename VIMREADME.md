@@ -1,3 +1,11 @@
+#### Vim base0
+
+* vim help
+* :version : check available plugins
+
+* Install plugins
+*Pathogen 
+*NerdTree
 
 
 ### To install new plugin with pathogen

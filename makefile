@@ -11,19 +11,19 @@ git_push_master :
 	git push -u origin master
 
 ssh_update :
-	ln -s /home/hduser/vi.config/ssh_config /home/hduser/.ssh/config
+	ln -s /home/vikram/vi.config/ssh_config /home/vikram/.ssh/config
 
 vim_update :
-	ln -s /home/hduser/vi.config/vim.config /home/hduser/.vimrc
+	ln -s /home/vikram/vi.config/vim.config /home/vikram/.vimrc
 
 java_update :
-	ln -s /usr/java/jdk1.7.0_65 /usr/java/latest
+	ln -s /usr/java/jdk1.7.0_79 /usr/java/latest
 
 vim_config :
 	mkdir -p ${PWD}/bundle 
-	ln -s /home/hduser/vi.config/bundle /home/hduser/.vim/bundle
+	ln -s /home/vikram/vi.config/bundle /home/vikram/.vim/bundle
 	mkdir -p ${PWD}/autoload 
-	ln -s /home/hduser/vi.config/autoload /home/hduser/.vim/autoload
+	ln -s /home/vikram/vi.config/autoload /home/vikram/.vim/autoload
 	curl https://github.com/tpope/vim-pathogen/raw/master/autoload/pathogen.vim > ${PWD}/pathogen.vim
 
 install_ctags :
