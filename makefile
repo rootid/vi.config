@@ -16,6 +16,9 @@ ssh_update :
 vim_update :
 	ln -s /home/vikram/vi.config/vim.config /home/vikram/.vimrc
 
+tmux_update :
+	ln -s /home/vikram/vi.config/tmux.config /home/vikram/.tmux.conf
+
 java_update :
 	ln -s /usr/java/jdk1.7.0_79 /usr/java/latest
 

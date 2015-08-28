@@ -19,10 +19,11 @@ OldrepoList=( 'git://github.com/scrooloose/nerdtree.git'
            'git://github.com/kien/ctrlp.vim'
            'git://github.com/godlygeek/tabular.git'
            'git://github.com/jieyu/ftplugin.vim'
+           'git://github.com/Shougo/neocomplete.vim'
          )
 
 newRepoList=(  
-           'git://github.com/Shougo/neocomplete.vim'
+           'git://github.com/vim-scripts/taglist.vim'
            )
 
 install() {
