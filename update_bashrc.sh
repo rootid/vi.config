@@ -16,3 +16,19 @@ if ! echo ${PATH} | grep -q ${JAVA_HOME} ; then
 fi
 
 PS1="\u@mat \W\$ "
+
+
+##ppa:kalakris/tmux
+sudo add-apt-repository ppa:kalakris/tmux
+sudo apt-get update
+sudo apt-cache show tmux 
+
+
+## get the 256 color
+wget http://www.vim.org/scripts/download_script.php?src_id=4568 -O colortest
+
+ 	
+for i in {0..255} ; do
+  printf "\x1b[38;5;${i}mcolour${i}\n"
+done
+
