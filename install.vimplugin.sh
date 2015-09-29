@@ -13,6 +13,7 @@
 readonly bundledir=${PWD}/bundle
 IS_FORCE_INSTALL=false
 
+  #'git://github.com/vim-scripts/taglist.vim'
 OldrepoList=( 'git://github.com/scrooloose/nerdtree.git' 
            'git://github.com/kien/ctrlp.vim.git'
            'git://github.com/tpope/vim-surround.git'
@@ -23,7 +24,7 @@ OldrepoList=( 'git://github.com/scrooloose/nerdtree.git'
          )
 
 newRepoList=(  
-           'git://github.com/vim-scripts/taglist.vim'
+           'git@github.com:emnh/taglist.vim.git'
            )
 
 install() {
