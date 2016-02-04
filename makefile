@@ -8,8 +8,8 @@ get_home:
 	@echo $(CWD)
 
 git_config :
-	git config user.email "vxxxxxxx@gmail.com"
-	git config user.name "rooid"
+	git config user.email "vXXXXXXXX@gmail.com"
+	git config user.name "rootid"
 
 git_del :
 	git status | grep 'deleted' | cut -d ":" -f2 | xargs git rm
