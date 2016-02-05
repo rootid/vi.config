@@ -25,10 +25,11 @@ OldrepoList=( 'git://github.com/scrooloose/nerdtree.git'
            'git@github.com:emnh/taglist.vim.git'
            'git://github.com/tpope/vim-commentary.git'
            'git://github.com/tpope/vim-fugitive.git'
+           'git://github.com/altercation/vim-colors-solarized.git'
          )
 
 newRepoList=(  
-            'git://github.com/altercation/vim-colors-solarized.git'
+            'git://github.com/SirVer/ultisnips.git'
            )
 
 install() {
