@@ -1,1 +1,4 @@
 *.out
+./autoload/autoload
+./bundle/bundle
+./vim.addons/vim.addons
