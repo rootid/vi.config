@@ -1,6 +1,5 @@
 
 ### Multiple git-hub account setting
-###### NOTE : softlink requires the absolute path
 
 ssh-agent : process runs in background that holds private and publie keys (RSA,DSA,etc.)
 To start the process 
