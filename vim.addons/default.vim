@@ -1,5 +1,6 @@
 "Minimum settings maximum coding
-
+"NOTE : alias for ctrl = c,ctrl,C alias for enter = cr	
+"
 :set number 
 :set hlsearch
 :set incsearch 
