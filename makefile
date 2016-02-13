@@ -31,11 +31,19 @@ vim_boot :
 	mkdir -p $(CWD)/autoload 
 	curl https://github.com/tpope/vim-pathogen/raw/master/autoload/pathogen.vim > $(CWD)/pathogen.vim
 
-vim_link:
+vim_ln_update :
 	ln -sf $(CWD)/bundle $(HOME_DIR)/.vim/bundle
 	ln -sf $(CWD)/vim.addons $(HOME_DIR)/.vim/vim.addons
 	ln -sf $(CWD)/autoload $(HOME_DIR)/.vim/autoload
 	ln -sf $(CWD)/vim.config $(HOME_DIR)/.vimrc
+
+bash_ln_update :
+	mkdir -p $(HOME_DIR)/.vi.bash
+	ln -sf $(CWD)/bash.addons/default.shrc $(HOME_DIR)/.vi.bash/default.shrc
+	ln -sf $(CWD)/bash.addons/git.shrc $(HOME_DIR)/.vi.bash/git.shrc
+	ln -sf $(CWD)/bash.addons/search.shrc $(HOME_DIR)/.vi.bash/search.shrc
+	# Update .bahsrc/.profile with
+	# source ~/.vi.bash/default.shrc
 
 install_ctags :
 	sudo apt-get install exuberant-ctags

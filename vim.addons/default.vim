@@ -7,7 +7,8 @@
 :set history=1000
 :set ruler 	
 :set undolevels=1000	
-:set relativenumber
+
+":set relativenumber
 
 "set search with lighBlue
 :hi Search ctermbg=LightBlue

@@ -30,6 +30,14 @@ OldrepoList=( 'git://github.com/scrooloose/nerdtree.git'
 
 newRepoList=(  
             'git://github.com/SirVer/ultisnips.git'
+
+replace with register
+titlecase
+slow.motion
+system-copy
+repeat.vim
+zoomin
+syntactic
            )
 
 install() {
