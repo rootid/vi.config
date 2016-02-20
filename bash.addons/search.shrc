@@ -50,6 +50,28 @@ searchi_pxml()
 	find . -follow -name 'pom.xml' | xargs grep -in "$1"
 }
 
+search_html()
+{
+	find . -follow -name '*.html' | xargs grep -n "$1"
+}
+
+searchi_html()
+{
+	find . -follow -name '*.html' | xargs grep -in "$1"
+}
+
+search_js()
+{
+	find . -follow -name '*.js' | xargs grep -n "$1"
+}
+
+searchi_js()
+{
+	find . -follow -name '*.js' | xargs grep -in "$1"
+}
+
+
+
 
 alias sg=search_groovy
 alias sig=searchi_groovy
@@ -65,3 +87,9 @@ alias six=searchi_xml
 
 alias sp=search_pxml
 alias sip=searchi_pxml
+
+alias sjs=search_js
+alias sijs=searchi_js
+
+alias shl=search_html
+alias sihl=searchi_html
