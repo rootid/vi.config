@@ -110,3 +110,5 @@ nnoremap <silent> ]B :blast <CR>
 
 "Edit text in vim
 ":set tw=0 wrap linebreak
+
+:set backspace=2  "compatible with version 5.4 and earlier
