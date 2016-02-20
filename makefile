@@ -42,6 +42,7 @@ bash_ln_update :
 	ln -sf $(CWD)/bash.addons/default.shrc $(HOME_DIR)/.vi.bash/default.shrc
 	ln -sf $(CWD)/bash.addons/git.shrc $(HOME_DIR)/.vi.bash/git.shrc
 	ln -sf $(CWD)/bash.addons/search.shrc $(HOME_DIR)/.vi.bash/search.shrc
+	ln -sf $(CWD)/bash.addons/trash.shrc $(HOME_DIR)/.vi.bash/trash.shrc
 	# Update .bahsrc/.profile with
 	# source ~/.vi.bash/default.shrc
 
