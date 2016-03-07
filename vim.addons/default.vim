@@ -99,14 +99,6 @@ endfunction
 nmap ,o :call OpenOther()<CR>
 
 
-"quick traverse in vim list
-"Refer Tim Pope’s unimpaired.vim plugin
-"navigate in buffer
-nnoremap <silent> [b :bprevious <CR> 
-nnoremap <silent> ]b :bnext <CR> 
-nnoremap <silent> [B :bfirst <CR> 
-nnoremap <silent> ]B :blast <CR>
-
 
 "Edit text in vim
 ":set tw=0 wrap linebreak

@@ -26,19 +26,17 @@ OldrepoList=( 'git://github.com/scrooloose/nerdtree.git'
            'git://github.com/tpope/vim-commentary.git'
            'git://github.com/tpope/vim-fugitive.git'
            'git://github.com/altercation/vim-colors-solarized.git'
+            'git://github.com/SirVer/ultisnips.git'
          )
 
-newRepoList=(  
-            'git://github.com/SirVer/ultisnips.git'
-
-replace with register
-titlecase
-slow.motion
-system-copy
-repeat.vim
-zoomin
-syntactic
-           )
+#replace with register
+#titlecase
+#slow.motion
+#system-copy
+#repeat.vim
+#zoomin
+#syntactic
+newRepoList=("git@github.com:tpope/vim-unimpaired.git")
 
 install() {
     for repo in ${newRepoList[@]}
