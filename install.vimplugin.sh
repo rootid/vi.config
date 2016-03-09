@@ -27,6 +27,7 @@ OldrepoList=( 'git://github.com/scrooloose/nerdtree.git'
            'git://github.com/tpope/vim-fugitive.git'
            'git://github.com/altercation/vim-colors-solarized.git'
             'git://github.com/SirVer/ultisnips.git'
+            'git@github.com:tpope/vim-unimpaired.git'
          )
 
 #replace with register
@@ -36,7 +37,7 @@ OldrepoList=( 'git://github.com/scrooloose/nerdtree.git'
 #repeat.vim
 #zoomin
 #syntactic
-newRepoList=("git@github.com:tpope/vim-unimpaired.git")
+newRepoList=("git@github.com:msanders/snipmate.vim.git")
 
 install() {
     for repo in ${newRepoList[@]}
