@@ -54,3 +54,21 @@ class Autotrigger_WillProduceNoExceptionWithVimLowerThan214(_VimTest):
         """}
     keys = 'abc'
     wanted = 'abc'
+
+
+class Autotrigger_CanMatchPreviouslySelectedPlaceholder(_VimTest):
+    if not test.vim.has_patch(214):
+        return 'Vim newer than 7.4.214 is required'
+    else:
+        return None
+
+    files = { 'us/all.snippets': r"""
+        snippet if "desc"
+        if ${1:var}: pass
+        endsnippet
+        snippet = "desc" "snip.last_placeholder" Ae
+        `!p snip.rv = snip.context.current_text` == nil
+        endsnippet
+        """}
+    keys = 'if' + EX + '=' + ESC + 'o='
+    wanted = 'if var == nil: pass\n='
