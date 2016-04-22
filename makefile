@@ -36,6 +36,7 @@ vim_ln_update :
 	ln -sf $(CWD)/vim.addons $(HOME_DIR)/.vim/vim.addons
 	ln -sf $(CWD)/autoload $(HOME_DIR)/.vim/autoload
 	ln -sf $(CWD)/vim.config $(HOME_DIR)/.vimrc
+	ln -sf $(CWD)/vim.snippets/ultisnips-vim $(HOME_DIR)/.vimrc/UltiSnips 
 
 bash_ln_update :
 	mkdir -p $(HOME_DIR)/.vi.bash
