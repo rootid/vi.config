@@ -8,6 +8,10 @@
 :set ruler 	
 :set undolevels=1000	
 
+
+"enable filetype,plugin,indent on
+:filetype plugin indent on
+
 ":set relativenumber
 
 "set search with lighBlue
