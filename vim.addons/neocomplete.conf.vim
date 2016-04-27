@@ -9,10 +9,12 @@ let g:neocomplete#sources#syntax#min_keyword_length = 2
 
 " <TAB>: completion. (it wonly works for local file
 "inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><C-j>  pumvisible() ? "\<C-n>" : "\<C-j>"
 
-inoremap <expr><C-j>  pumvisible() ? "\<C-n>" :
-       \ <SID>check_back_space() ? "\<C-j>" :
-       \ neocomplete#start_manual_complete()
+"inoremap <expr><C-j>  pumvisible() ? "\<C-n>" :
+"       \ <SID>check_back_space() ? "\<C-j>" :
+"       \ neocomplete#start_manual_complete()
+
 
 function! s:check_back_space() "{{{
    let col = col('.') - 1

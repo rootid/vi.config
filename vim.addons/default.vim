@@ -107,4 +107,40 @@ nmap ,o :call OpenOther()<CR>
 "Edit text in vim
 ":set tw=0 wrap linebreak
 
-:set backspace=2  "compatible with version 5.4 and earlier
+set backspace=2  "compatible with version 5.4 and earlier
+
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+nnoremap j gj
+nnoremap k gk
+
+"set wrap
+"set textwidth=79
+"set formatoptions=qrn1
+"set colorcolumn=85
+
+
+let mapleader = ","
+nnoremap / /\v
+vnoremap / /\v
+set ignorecase
+set smartcase
+set gdefault
+set incsearch
+set showmatch
+set hlsearch
+nnoremap <leader><space> :noh<cr>
+nnoremap <tab> %
+vnoremap <tab> %
+
+
+nnoremap <leader>w <C-w>v<C-w>l
+
+"strip all trailing whitespace in the current file
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
