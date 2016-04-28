@@ -14,9 +14,6 @@
 
 ":set relativenumber
 
-"set search with lighBlue
-:hi Search ctermbg=LightBlue
-
 "make backspace work like most other apps
 :syn on	
 
@@ -126,21 +123,3 @@ nnoremap k gk
 "set colorcolumn=85
 
 
-let mapleader = ","
-nnoremap / /\v
-vnoremap / /\v
-set ignorecase
-set smartcase
-set gdefault
-set incsearch
-set showmatch
-set hlsearch
-nnoremap <leader><space> :noh<cr>
-nnoremap <tab> %
-vnoremap <tab> %
-
-
-nnoremap <leader>w <C-w>v<C-w>l
-
-"strip all trailing whitespace in the current file
-nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>

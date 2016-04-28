@@ -3,3 +3,4 @@ HISTFILESIZE=2000
 
 PS1="\u@mat \W\$ "
 alias lr='ls -ltr'
+alias tx='tmux'
