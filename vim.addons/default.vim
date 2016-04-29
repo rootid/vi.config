@@ -48,48 +48,10 @@ vnoremap > >gv
 ":set shiftwidth=4
 ":set softtabstop=4
 "
-"
-"Session 
-function! MakeSession()
-  let b:sessiondir = $HOME . "/.vim/sessions" . getcwd()
-  if (filewritable(b:sessiondir) != 2)
-    exe 'silent !mkdir -p ' b:sessiondir
-    redraw!
-  endif
-  let b:filename = b:sessiondir . '/session.vim'
-  exe "mksession! " . b:filename
-endfunction
-
-function! LoadSession()
-  let b:sessiondir = $HOME . "/.vim/sessions" . getcwd()
-  let b:sessionfile = b:sessiondir . "/session.vim"
-  if (filereadable(b:sessionfile))
-    exe 'source ' b:sessionfile
-  else
-    echo "No session loaded."
-  endif
-endfunction
 
 
-":mksession! <file_name>
-"vim -S <file_name>
-" Updates a session, BUT ONLY IF IT ALREADY EXISTS
-function! UpdateSession()
-  let b:sessiondir = $HOME . "/.vim/sessions" . getcwd()
-  let b:sessionfile = b:sessiondir . "/session.vim"
-  if (filereadable(b:sessionfile))
-    exe "mksession! " . b:sessionfile
-    echo "updating session"
-  endif
-endfunction
-
-"au VimEnter * nested :call LoadSession()
-
-map ,l :call LoadSession()<CR>
-"au VimLeave * :call MakeSession()
-map ,c :call MakeSession()<CR>
-map ,u :call UpdateSession()<CR>
-
+nmap SSA :wa<CR>:mksession! ~/sessions/
+nmap SO :wa<CR>:so ~/sessions/
 
 "open the .h and .cpp files if one of the file is open use ,o
 function! OpenOther()
