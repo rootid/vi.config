@@ -84,7 +84,7 @@ endfunction
 
 map ,l :call LoadSession()<CR>
 "au VimLeave * :call MakeSession()
-map ,c :call MakeSession()<CR>
+map ms :call MakeSession()<CR>
 map ,u :call UpdateSession()<CR>
 
 
