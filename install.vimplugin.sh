@@ -29,6 +29,7 @@ OldrepoList=( 'git://github.com/scrooloose/nerdtree.git'
             'git://github.com/SirVer/ultisnips.git'
             'git@github.com:tpope/vim-unimpaired.git'
           'git@github.com:msanders/snipmate.vim.git'
+          'https://github.com/mattn/emmet-vim.git'
          )
 
 #replace with register
@@ -38,7 +39,8 @@ OldrepoList=( 'git://github.com/scrooloose/nerdtree.git'
 #repeat.vim
 #zoomin
 #syntactic
-newRepoList=("git://github.com/SirVer/ultisnips.git")
+
+newRepoList=("git@github.com:ternjs/tern_for_vim.git")
 
 
 install() {
