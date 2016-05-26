@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 #NOTE : get the latest vim from 3rd party repository
 #sudo add-apt-repository ppa:fcwu-tw/ppa
 #sudo apt-get update
@@ -15,22 +14,22 @@ IS_FORCE_INSTALL=false
 
   #'git://github.com/vim-scripts/taglist.vim'
 OldrepoList=( 'git://github.com/scrooloose/nerdtree.git' 
-           'git://github.com/kien/ctrlp.vim.git'
-           'git://github.com/tpope/vim-surround.git'
-           'git://github.com/kien/ctrlp.vim'
-           'git://github.com/godlygeek/tabular.git'
-           'git://github.com/jieyu/ftplugin.vim'
-           'git://github.com/Shougo/neocomplete.vim'
-           'git://github.com/tpope/neocomplete.vim'
-           'git@github.com:emnh/taglist.vim.git'
-           'git://github.com/tpope/vim-commentary.git'
-           'git://github.com/tpope/vim-fugitive.git'
-           'git://github.com/altercation/vim-colors-solarized.git'
-            'git://github.com/SirVer/ultisnips.git'
-            'git@github.com:tpope/vim-unimpaired.git'
-          'git@github.com:msanders/snipmate.vim.git'
-          'https://github.com/mattn/emmet-vim.git'
-          'git@github.com:ternjs/tern_for_vim.git'
+              'git://github.com/SirVer/ultisnips.git'
+              'git@github.com:tpope/vim-unimpaired.git'
+              'git://github.com/Shougo/neocomplete.vim'
+              'git://github.com/altercation/vim-colors-solarized.git'
+              'git://github.com/godlygeek/tabular.git'
+              'git://github.com/jieyu/ftplugin.vim'
+              'git://github.com/kien/ctrlp.vim'
+              'git://github.com/kien/ctrlp.vim.git'
+              'git://github.com/tpope/neocomplete.vim'
+              'git://github.com/tpope/vim-commentary.git'
+              'git://github.com/tpope/vim-fugitive.git'
+              'git://github.com/tpope/vim-surround.git'
+              'git@github.com:emnh/taglist.vim.git'
+              'git@github.com:msanders/snipmate.vim.git'
+              'git@github.com:ternjs/tern_for_vim.git'
+              'https://github.com/mattn/emmet-vim.git'
          )
 
 #replace with register
@@ -42,7 +41,6 @@ OldrepoList=( 'git://github.com/scrooloose/nerdtree.git'
 #syntactic
 
 newRepoList=("git@github.com:tpope/vim-unimpaired.git")
-
 
 install() {
     for repo in ${newRepoList[@]}
@@ -72,4 +70,3 @@ force_install() {
 install
 
 ${IS_FORCE_INSTALL} && force_install 
-
