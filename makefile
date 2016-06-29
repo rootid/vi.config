@@ -38,6 +38,9 @@ vim_ln_update :
 	ln -sf $(CWD)/vim.config $(HOME_DIR)/.vimrc
 	ln -sf $(CWD)/vim.snippets/ultisnips-vim $(HOME_DIR)/.vim/UltiSnips 
 	ln -sf $(CWD)/vim.colors $(HOME_DIR)/.vim/colors
+	ln -sf $(CWD)/vim.colors $(HOME_DIR)/.vim/colors
+	ln -sf $(CWD)/ftplugin.vim/ftdetect $(HOME_DIR)/.vim/ftdetect
+	ln -sf $(CWD)/ftplugin.vim/ftplugin $(HOME_DIR)/.vim/ftplugin
 
 bash_ln_update :
 	mkdir -p $(HOME_DIR)/.vi.bash

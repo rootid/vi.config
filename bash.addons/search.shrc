@@ -93,3 +93,10 @@ alias sijs=searchi_js
 
 alias shl=search_html
 alias sihl=searchi_html
+
+
+#ACK short cuts
+alias aj='ack --java'
+alias ag='ack --groovy'
+alias ax='ack --xml'
+alias ajs='ack --js'
