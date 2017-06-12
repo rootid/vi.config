@@ -1,4 +1,4 @@
-setlocal ts=5 sts=4 sw=4 noexpandtab
+setlocal ts=3 sw=3 cindent cino=:0
 
 
 set foldclose=all 

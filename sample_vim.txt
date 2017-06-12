@@ -1,0 +1,14 @@
+
+:%s/",\S/", /g :  " add the space before ,
+:%s/^I/  /g " Replace the tabs
+:%s/(\s\+/(/g "Remove the white spaces after "("
+:%s/\s\+(/(/g "Remove the white spaces before "("
+:%s/\s\+)/)/g "Replace all white spaces before ")"
+:%g/System/d "Remove all system.out
+:%s/,\(\w\+\)/, \1/g " Insert space between words separated by ',' \0 : whole string \1:matched string
+:%s/if(/if (/g 
+:%s/catch(/catch (/g 
+
+ %s/\t/  /g | %s/",\S/", /g | %s/,\(\w\+\)/, \1/g  | %s/(\s\+/(/g | %s/\s\+(/(/g | %s/\s\+)/)/g| %s/catch(/catch (/g | %s/if(/if (/g 
+
+
